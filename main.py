@@ -15,11 +15,11 @@ print(latitude, longitude)
 
 while True:
     distance = HC_SR04.distance()
-    Left = FSR_402.cha0()
-    Right = FSR_402.cha1()
-    Center = FSR_402.cha2()
-    Back = FSR_402.cha3()
-    Front = FSR_402.cha4()
+    Left = FSR_402.cha(0)
+    Right = FSR_402.cha(1)
+    Center = FSR_402.cha(2)
+    Back = FSR_402.cha(3)
+    Front = FSR_402.cha(4)
     inputIO = GPIO.input(button)
     
     if inputIO == False:
